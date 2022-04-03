@@ -1,0 +1,42 @@
+conky.config = {
+  
+  double_buffer = true,
+  background = false,
+  own_window = true,
+  own_window_transparent = true,
+  own_window_type = 'desktop',
+  own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+--own_window_argb_visual yes
+--own_window_argb_value 210
+  draw_borders = false,
+  draw_graph_borders = false,
+  draw_shades = false,
+  gap_x = 25,
+  gap_y = 0,
+  alignment = 'bottom_left',
+  update_interval = 1,
+  own_window_colour = '000000',
+  use_xft = true,
+  font = 'M+ 1m:bold:pixelsize=13',
+  use_spacer = 'none', 
+  maximum_width = 500,
+  minimum_height = 185,
+  minimum_width = 500,
+  border_inner_margin = 15,
+  uppercase = true,
+  override_utf8_locale = true,
+
+ lua_load = '~/.conky/mugi/scripts/rings.lua',
+ lua_draw_hook_pre = 'ring_stats',
+}
+
+conky.text = [[
+${image /tmp/cover.jpg -p 74,8 -s 105x110}${exec ~/.conky/mugi/scripts/albumart}
+${image ~/.conky/mugi/mugi-round-extend.png}
+${voffset -5}
+${goto 230}${color 36EEEE}$mpd_artist
+${goto 230}${color 7EA3FE}${scroll 32 $mpd_title}
+${goto 230}${color 36EEEE}${scroll 32 $mpd_album}
+${voffset 22}
+${goto 110}${color 7EA3FE}${font M+ 1m:pixelsize=12}$mpd_elapsed / $mpd_length
+]]
