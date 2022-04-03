@@ -1,5 +1,5 @@
 ### Panel-Polybar
-Icon-Right: left click launche conky, click killall conky
+Icon-Right: left click launche conky, right click killall conky
 
 ### Rofi, Polybar
 The rofi folder is integrated into the openbox folder, it is configured that way.
