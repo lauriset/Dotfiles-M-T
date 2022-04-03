@@ -1,0 +1,77 @@
+
+
+! URxvt Configuration
+! URxvt.font:                       xft:Cozette:size=10:autohint=true
+URxvt.font:                       xft:CaskaydiaCove NF:size=10:autohint=true
+! URxvt.font:                       xft:DaddyTimeMono NF:size=11:style=regular:autohint=true
+URxvt.geometry:                   80x22
+URxvt.internalBorder:             30
+URxvt.cursorBlink:                false
+URxvt.cursorUnderline:            true
+URxvt.saveLines:                  8192
+URxvt.scrollBar:                  false
+URxvt.scrollBar_right:            true
+URxvt.scrollBar_floating:         false
+URxvt.scrollstyle:                plain
+URxvt.scrollWithBuffer:           false
+URxvt.urgentOnBell:               false
+URxvt.depth:                      32
+URxvt.background:                 [100]#161921
+URxvt.iso14755:                   false
+!URxvt.letterSpace: -1
+
+! URxvt Extensions
+URxvt.perl-ext-common:            default,tabbedex,url-select,font-size
+
+URxvt.keysym.Control-Right:       font-size:increase
+URxvt.keysym.Control-Left:        font-size:decrease
+URxvt.keysym.Control-Shift-Right: font-size:incglobal
+URxvt.keysym.Control-Shift-Left:  font-size:decglobal
+URxvt.keysym.Control-equal:       font-size:reset
+URxvt.keysym.Control-slash:       font-size:show
+
+URxvt.keysym.Control-Shift-C:     eval:selection_to_clipboard
+URxvt.keysym.Control-Shift-V:     eval:paste_clipboard
+URxvt.keysym.Control-Up:          eval:scroll_up 1
+URxvt.keysym.Control-Down:        eval:scroll_down 1
+URxvt.keysym.Control-Home:        eval:scroll_to_top
+URxvt.keysym.Control-End:         eval:scroll_to_bottom
+
+
+URxvt.backgroundPixmap: /home/lauri/.pixmap.png;style=scaled
+
+*background: #090F18
+*foreground: #36EEEE
+*cursorColor: #07A7A7
+
+! Black
+*color0: #090F18
+*color8: #36EEEE
+
+! Red
+*color1: #7EA3FE
+*color9: #E38C8F
+
+! Green
+*color2:  #D6E33C
+*color10: #9EAC9D
+
+! Yellow
+*color3:  #537DA7
+*color11: #4B72D1
+
+! Blue
+*color4:  #7EA3FE
+*color12: #A4B9EF
+
+! Magenta
+*color5:  #836C9E
+*color13: #C6AAE8
+
+! Pink
+*color6:  #E5B4E2
+*color14: #E5B4E2
+
+! Whites
+*color7:  #36EEEE
+*color15: #2BDFDF
